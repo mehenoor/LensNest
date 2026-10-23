@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LensNest | Discover Images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#" class="logo">LensNest<span>.</span></a>
+    <p class="tagline">A little inspiration for what you imagine.</p>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YOUR VISUAL EXPLORER</p>
+      <h1>Find your next <span>inspiration.</span></h1>
+      <p class="description">
+        Explore the world through images. What would you like to see today?
+      </p>
+
+      <div class="search-box">
+        <label for="searchInput">Search for images</label>
+        <div class="search-row">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Try sunsets, mountains, art..."
+          >
+          <button type="button" id="searchButton">Search ↗</button>
+        </div>
+      </div>
+
+      <div class="suggestions">
+        <span class="suggestion-label">TRY EXPLORING</span>
+        <div class="chip-row">
+          <button type="button" class="chip">Nature</button>
+          <button type="button" class="chip">Architecture</button>
+          <button type="button" class="chip">Animals</button>
+          <button type="button" class="chip">Travel</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow">YOUR DISCOVERY SPACE</p>
+          <h2>Image gallery</h2>
+        </div>
+        <span class="result-count" id="resultCount">Awaiting search</span>
+      </div>
+
+      <div class="results-grid" id="results"></div>
+
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">✳</div>
+        <h3>Your next discovery starts here</h3>
+        <p>Enter a topic above and search to see your image collection.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for the curious. <span>© LensNest</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
